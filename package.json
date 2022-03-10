@@ -31,7 +31,7 @@
   },
   "peerDependencies": {
     "@nestjs/common": "^6.0.0 || ^7.0.0 || ^8.0.0",
-    "passport-fastify": "^0.0.1"
+    "passport-fastify": "^0.0.2"
   },
   "devDependencies": {
     "@commitlint/cli": "16.2.1",
@@ -54,7 +54,7 @@
     "jest": "27.5.1",
     "lint-staged": "12.3.5",
     "pactum": "3.1.4",
-    "passport-fastify": "^0.0.1",
+    "passport-fastify": "^0.0.2",
     "passport-jwt": "4.0.0",
     "passport-local": "1.0.0",
     "prettier": "2.5.1",
