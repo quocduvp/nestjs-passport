@@ -1,8 +1,17 @@
 {
-  "name": "@nestjs/passport",
+  "name": "@nestjs/fastify-passport",
   "version": "8.2.1",
   "description": "Nest - modern, fast, powerful node.js web framework (@passport)",
-  "author": "Kamil Mysliwiec",
+  "author": {
+    "name": "Adward",
+    "email": "adward0511@gmail.com",
+    "url": "https://adward-nguyen-portfolio.vercel.app/"
+  },
+  "homepage": "https://www.passportjs.org/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/quocduvp/passport-fastify.git"
+  },
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && tsc -p tsconfig.build.json",
@@ -16,19 +25,18 @@
     "test": "jest"
   },
   "peerDependencies": {
-    "@nestjs/common": "^6.0.0 || ^7.0.0 || ^8.0.0",
-    "passport": "^0.4.0 || ^0.5.0"
+    "@nestjs/common": "^6.0.0 || ^7.0.0 || ^8.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "16.2.1",
     "@commitlint/config-angular": "16.2.1",
     "@nestjs/common": "8.4.0",
-    "@types/node": "17.0.17",
     "@nestjs/core": "8.4.0",
     "@nestjs/jwt": "8.0.0",
     "@nestjs/platform-express": "8.4.0",
     "@nestjs/testing": "8.4.0",
     "@types/jest": "27.4.1",
+    "@types/node": "17.0.17",
     "@types/passport": "1.0.7",
     "@types/passport-jwt": "3.0.6",
     "@types/passport-local": "1.0.34",
@@ -38,10 +46,10 @@
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.25.4",
     "husky": "7.0.4",
-    "lint-staged": "12.3.5",
     "jest": "27.5.1",
+    "lint-staged": "12.3.5",
     "pactum": "3.1.4",
-    "passport": "0.5.2",
+    "passport-fastify": "^0.0.1",
     "passport-jwt": "4.0.0",
     "passport-local": "1.0.0",
     "prettier": "2.5.1",
@@ -62,9 +70,5 @@
       "commit-msg": "commitlint -c .commitlintrc.json -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
     }
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nestjs/passport"
   }
 }

@@ -1,6 +1,5 @@
-import * as passport from 'passport';
 import { Type } from '../interfaces';
-
+const passport = require('passport-fastify')
 export function PassportStrategy<T extends Type<any> = any>(
   Strategy: T,
   name?: string | undefined

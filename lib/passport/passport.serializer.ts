@@ -1,4 +1,4 @@
-import * as passport from 'passport';
+const passport = require('passport-fastify')
 
 export abstract class PassportSerializer {
   abstract serializeUser(user: any, done: Function);

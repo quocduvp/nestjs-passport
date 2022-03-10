@@ -8,7 +8,6 @@ import {
   Optional,
   UnauthorizedException
 } from '@nestjs/common';
-import * as passport from 'passport';
 import { Type } from './interfaces';
 import {
   AuthModuleOptions,
@@ -17,6 +16,7 @@ import {
 import { defaultOptions } from './options';
 import { memoize } from './utils/memoize.util';
 
+const passport = require('passport-fastify')
 export type IAuthGuard = CanActivate & {
   logIn<TRequest extends { logIn: Function } = any>(
     request: TRequest
